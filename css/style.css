@@ -283,16 +283,97 @@
   src: ulr("/fonts/Dancing-Script.ttf");
 }
 
-.about-jumbo {
+.blur-bg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url("../img/wellness.jpg");
   background-blend-mode: multiply;
-  background-color: #eccbd9;
-  height: calc(100vh - 100px);
+  background-color: #a59199;
   -webkit-filter: blur(5px);
           filter: blur(5px);
+  height: 750px;
+  width: 100vw;
+}
+
+.about-jumbo {
+  top: 60px;
+  padding: 25px 400px;
+  position: absolute;
+}
+
+@media (max-width: 1450px) {
+  .about-jumbo {
+    padding: 50px 250px;
+  }
+}
+
+.about-jumbo .about-text-box {
+  border-radius: 10px;
+  padding: 25px 50px;
+}
+
+.about-jumbo .about-text-box .about-title {
+  color: #06ffd3;
+  font-size: 50pt;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.about-jumbo .about-text-box .about-text {
+  color: #F7F7FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.about-jumbo .about-text-box .about-text-link {
+  text-indent: 0;
+}
+
+.about-jumbo .about-text-box .about-text-link a {
+  color: #06ffd3;
+  font-style: italic;
+}
+
+.expect-cancel-section {
+  color: #F7F7FF;
+  height: 370px;
+  margin-bottom: 100px;
+}
+
+.expect-cancel-section .what-to-expect {
+  width: 70%;
+}
+
+.expect-cancel-section .what-to-expect h2 {
+  color: #06ffd3;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.expect-cancel-section .what-to-expect .expect-text {
+  border-right: 8px solid #ECEBE4;
+  color: #F7F7FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding: 50px 150px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.expect-cancel-section .cancel-policy {
+  opacity: 0;
+  overflow: hidden;
+  width: 30%;
 }
 
 .exampleofmixing {

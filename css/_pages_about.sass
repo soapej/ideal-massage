@@ -2,11 +2,74 @@
 @import _colors
 @import _fonts
 
-
-.about-jumbo
+.blur-bg
 	+backgroundCover
+	background-attachment: fixed
 	background-image: url('../img/wellness.jpg')
 	background-blend-mode: multiply
-	background-color: $pink
-	height: calc(100vh - 100px)
+	background-color: $darkerPink
 	filter: blur(5px)
+	height: 750px
+	width: 100vw
+	
+.about-jumbo
+	top: 60px
+	padding: 25px 400px
+	position: absolute
+	@media(max-width: 1450px) 
+		padding: 50px 250px
+	.about-text-box
+		// background-color: rgba(0,0,0,.6)
+		border-radius: 10px
+		padding: 25px 50px
+		.about-title
+			color: $aqua
+			font-size: 50pt
+			font-family: $headerFont
+			padding-bottom: 25px
+			text-align: center
+		.about-text
+			color: $white
+			font-family: $subheaderFont
+			font-size: 16pt
+			line-height: 30px
+			margin-bottom: 20px
+			text-align: justify
+			text-indent: 50px
+		.about-text-link
+			text-indent: 0
+			a
+				color: $aqua
+				font-style: italic
+
+// .about-divider
+// 	width: 80%
+// 	border-top: 10px solid $darkGray
+// 	border-bottom: 10px solid $darkGray
+// 	margin: 50px auto
+
+.expect-cancel-section
+	color: $white
+	height: 370px
+	margin-bottom: 100px
+	.what-to-expect
+		width: 70%
+		h2
+			color: $aqua
+			font-family: $headerFont
+			font-size: 40px
+			text-align: center
+		.expect-text
+			border-right: 8px solid $offWhite
+			color: $white
+			font-family: $subheaderFont
+			font-size: 16pt
+			line-height: 30px
+			margin-bottom: 20px
+			padding: 50px 150px
+			text-align: justify
+			text-indent: 50px
+	.cancel-policy
+		opacity: 0
+		overflow: hidden
+		width: 30%
